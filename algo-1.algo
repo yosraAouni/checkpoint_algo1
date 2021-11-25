@@ -1,0 +1,29 @@
+ALGORITHM algorithm_checkpoint1
+VAR
+    sentence: STRING ;
+    sum_of_ch: INTEGER;
+    sum_of_words:INTEGER;
+    sum_of_vowels:INTEGER!=0;
+BEGIN
+    REPEAT
+        Read (sentence)
+    UNTIL (sentence[length(sentence)-1]='.') 
+    sum_of_ch:= length(sentence)
+    
+
+
+    FOR i FROM 0 TO length(sentence)-1 STEP 1 DO 
+        IF (sentence[i]='') THEN 
+            sum_of_words:=sum_of_words+1
+        END_IF 
+    END_FOR
+    
+
+    FOR i FROM 0 TO length(sentence)-1 STEP 1 DO
+        IF (sentence[i] ='a') or (sentence[i]='e') or (sentence[i]='i') or (sentence[i]='o') or (sentence[i]='u') or (sentence[i]='y')
+            sum_of_vowels:= sum_of_vowels+1
+        END_IF
+    END_FOR
+    
+    
+END
