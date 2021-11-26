@@ -3,7 +3,7 @@ VAR
     sentence: STRING ;
     sum_of_ch: INTEGER;
     sum_of_words:INTEGER;
-    sum_of_vowels:INTEGER!=0;
+    sum_of_vowels:INTEGER:=0;
 BEGIN
     REPEAT
         Read (sentence)
